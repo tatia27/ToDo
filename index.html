@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <div class="menu__logo">
+                    <a href="index.html">
+                        <img class="logo__image" src="images/Group 13.svg" alt="Управление">
+                    </a>
+                    <h1 class="menu__title">To do</h1>
+                    <img src="images/login.png" alt="Пользователь" id="logo-photo" class="logo-photo">
+                    <!-- <a href="login.html" class="login-href">Войти</a> -->
+                </div>
+                <div class="menu__sign">
+                    <a href="login.html" class="login-href">Войти</a>
+                    <select class="menu-language">
+                        <option value='ru' selected>Ru</option>
+                        <option value='en'>En</option>
+                    </select>
+                </div>
+            </div>
+            <p id='ff' class="data"></p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <form class="new-task-form" id="task-form">
+                <input type="text" class="new-task-input" id="task-input" placeholder="Введите задачу" />
+                <input type="submit" class="buton-add" id="new-task-input" value="Добавить" readonly>
+            </form>
+            <section class="task-list">
+                <h2 id="lng-tasklist">Task list</h2>
+                <div class="tasks">
+                    <ul class="actions-todo">
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="sidebar">
+        <div class="cont">
+            <div class="inner">
+                <div class="sidebar__header">
+                    <img class="sidebar-nav" src="images/white.svg" alt="Управление">
+                </div>
+                <div class="sidebar-nav">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="index.html">
+                                <img src="images/smile.svg" alt="Смайлик">
+                                <span id="lng-title" class="sidebar__link-text">Мой день</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="#">
+                                <img src="images/house.svg" alt="Дом">
+                                <span id="lng-tasks" class="sidebar__link-text">Задачи</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <div class="sidebar-wrapper">
+                                <div class="sidebar-tema">
+                                    <img src="images/moon.svg" alt="Настройки">
+                                    <span id="lng-theme" class="sidebar__link-text">Тема</span>
+                                </div>
+                                <div class="toggle-swicth">
+                                    <span class="switch"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar__footer">
+                    <img src="images/log.svg" alt="Регистрация">
+                    <a href="signup.html" class="logout__link">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/localization.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
