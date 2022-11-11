@@ -42,39 +42,6 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const db = getDatabase(app);
-    // const auth = getAuth();
-
-    // signUp.addEventListener('click', (e) => {
-
-    //     let email = document.getElementById('email').value;
-    //     let password = document.getElementById('password').value;
-    //     let username = document.getElementById('username').value;
-
-    //     createUserWithEmailAndPassword(auth, email, password)
-    //         .then((userCredential) => {
-    //             // Signed in 
-    //             const user = userCredential.user;
-    //             set(ref(db, 'users/' + user.uid + user.password), {
-    //                 username: username,
-    //                 email: email,
-    //                 password: password
-    //             })
-
-    //             alert('Successfully sidned up!');
-    //             // window.history.pushState({ param: null }, '', 'index.html');
-
-    //             setTimeout(function () {
-    //                 document.location.href = "/index.html";
-    //             }, 4000);
-
-    //         })
-    //         .catch((error) => {
-    //             const errorCode = error.code;
-    //             const errorMessage = error.message;
-
-    //             alert(errorMessage);
-    //         });
-    // });
 
     login.addEventListener('click', (e) => {
         let email = document.getElementById('email').value;
@@ -87,21 +54,6 @@
                 const user = userCredential.user;
                 window.localStorage.setItem('toDoUser', JSON.stringify(user))
                 document.location.href = '/index.html';
-                // const dt = new Date();
-                // update(ref(database, 'users/' + user.uid)), {
-                //     email: dt,
-                // }
-                // alert('User loged in!');
-
-                // setTimeout(function () {
-                //     document.location.href = "/index.html";
-                //     document.querySelector('.login-href').innerHTML = email;
-                // }, 4000);
-
-                // let img = document.createElement('img');
-                // img.className = "logo-photo";
-                // img.setAttribute('src', 'images/login.png');
-                // document.body.preppend(img);
 
             })
             .catch((error) => {
