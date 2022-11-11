@@ -1,2 +1,2 @@
 # ToDo application
-## ToDo application written in JavaScript
+## ToDo application written in JavaScriptgi
