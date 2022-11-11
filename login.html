@@ -46,7 +46,7 @@
     login.addEventListener('click', (e) => {
         let email = document.getElementById('email').value;
         let password = document.getElementById('password').value;
-        // let username = document.getElementById('username').value;
+    
         const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
