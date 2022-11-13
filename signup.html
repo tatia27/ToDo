@@ -16,7 +16,7 @@
             <input class="input" id="username" type="text" placeholder="Имя">
             <input class="input" id="email" type="email" placeholder="e-mail">
             <input class="input" id="password" type="password" placeholder="Пароль">
-            <button class="btn" id="signUp" type="submit">Регистрация</button>
+            <button class="btn" id="signUp" type="submit">Зарегистириваться</button>
         </div>
     </div>
 </body>
@@ -61,9 +61,10 @@
                     email: email,
                     password: password
                 })
-
+                setTimeout(()=>{
                 window.localStorage.setItem('toDoUser', JSON.stringify(user))
-                document.location.href = '/index.html';
+                document.location.href = '/index.html'},
+                3000)
 
             })
             .catch((error) => {

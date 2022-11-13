@@ -13,7 +13,7 @@ const langArr = {
     },
     "registration": {
         'ru': 'Регистрация',
-        'en': 'reg'
+        'en': 'Register'
     },
     "button": {
         'ru': 'Добавить',
@@ -31,6 +31,10 @@ const langArr = {
         'ru': 'Введите задачу',
         'en': 'Add task'
     },
+    "go" : {
+        'ru':'Войти',
+        'en': 'Come in'
+    }
 }
 
 const select = document.querySelector('.menu-language');
@@ -55,7 +59,7 @@ function changeLanguage() {
     }
     select.value = hash;
     document.querySelector('.logout__link').innerHTML = langArr['registration'][hash];
-
+    document.querySelector('.login-href').innerHTML = langArr['go'][hash];
     document.querySelector('#new-task-input').value = langArr['add'][hash];
     let a = document.querySelector('#task-input');
     a.setAttribute('placeholder', langArr['addTask'][hash]);
